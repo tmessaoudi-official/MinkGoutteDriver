@@ -17,11 +17,15 @@
     "require": {
         "php":                           ">=5.3.1",
         "behat/mink-browserkit-driver":  "~1.2@dev",
-        "fabpot/goutte":                 "~1.0.4|~2.0|~3.1"
+        "fabpot/goutte":                 "~1.0.4|~2.0|~3.1|4.*"
     },
 
     "require-dev": {
         "mink/driver-testsuite": "dev-master"
+    },
+    
+    "replace": {
+        "behat/mink-goutte-driver": "*"
     },
 
     "autoload": {
